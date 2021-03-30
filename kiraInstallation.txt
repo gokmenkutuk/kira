@@ -52,13 +52,8 @@ sudo -s
  
 //node'u çalıştırıyoruz node'un çalışmas 5-10 dakika arasında sürüyor
 kira
- 
-//yeni bir ssh penceresi açıyoruz, kullanıcıya giriş yapıyoruz
-su - kira 
- 
-//Public Key için dosyayı açıyoruz
-sudo nano /home/kira/.secrets/menmonics.env
 
-//VALIDATOR_NODE_ID yi alıp formda yerine yazıyoruz
+//açılan ekranda 5'e basıyoruz gelen ekrandan aşağıdaki alanı alıp formda yerine yazıyoruz.
+Val.ADDR: "VALIDATOR ADDRES" 
 
 Kurulum ve form gönderme işlemi tamamlanmış oluyor.
