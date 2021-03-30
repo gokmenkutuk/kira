@@ -1,5 +1,7 @@
 //kuracağımız node için aşağıdaki TCP portlarını açıyoruz
 
+Kaynak: 4vCPU - 8GB RAM - 40 GB Memory
+
 22 — Reserved for SSH, allows for remote communication with the host
 80 — Allows for http access to KIRA Frontend
 9090 — GRPC access to the public sentry
