@@ -48,5 +48,3 @@ sudo nano /home/kira/.secrets/menmonics.env
 //VALIDATOR_NODE_ID yi alıp formda yerine yazıyoruz
 
 Kurulum ve form gönderme işlemi tamamlanmış oluyor.
- 
- 
