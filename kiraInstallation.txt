@@ -26,6 +26,9 @@ sudo usermod -a -G sudo kira
 //Usere giriyoruz.
 sudo su - kira
 
+//komutu çalıştırmak için ssh ekranı olması gerekiyor bunun için aşağıdaki komutu yazıyoruz
+sudo -s
+
 //Komutu çalıştırdıktan sonra gelen ekranda sırasıyla( testnet-1 , V yazıyoruz)
 cd /tmp && read -p "Input branch name: " BRANCH && \
  wget https://raw.githubusercontent.com/KiraCore/kira/$BRANCH/workstation/init.sh -O ./i.sh && \
