@@ -1,4 +1,4 @@
-echo kuracağımız node için aşağıdaki TCP portlarını açıyoruz
+kuracağımız node için aşağıdaki TCP portlarını açıyoruz
 
 22 — Reserved for SSH, allows for remote communication with the host
 80 — Allows for http access to KIRA Frontend
