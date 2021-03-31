@@ -59,3 +59,13 @@ kira
 Val.ADDR: "VALIDATOR ADDRES" 
 
 Kurulum ve form gönderme işlemi tamamlanmış oluyor.
+
+
+//Node sync olduktan sonra aşağıdaki 5 ve i ye basıyoruz ve aşağıdaki komutu kendi bilgilerimize göre doldurarak çalıştırıyoruz
+
+sekaid tx customstaking claim-validator-seat --from validator --keyring-backend=test --home=$SEKAID_HOME \
+  --moniker="gloreix" \
+  --social="https://twitter.com/gkmnktk" \ //--> Twitter adresim
+  --website="https://github.com/gokmenkutuk" \ //--> GitHub Adresi verdim ben
+  --identity="https://t.me/gkmnktk" \ //--> Telegram adresim
+  --chain-id=$NETWORK_NAME --fees=100ukex --yes | jq
