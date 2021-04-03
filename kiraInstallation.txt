@@ -42,7 +42,9 @@ cd /tmp && read -p "Input branch name: " BRANCH && \
  1. Validator Node seçeneğini seçiyoruz -->2
  2. Quick Setup seçeneğini seçiyoruz -->1
  3. Create [N]ew network or [J]oin existing one: olanda Join seçeneğini seçiyoruz--> J 
- 3.1. Gelen ekranda 3.11.224.235, 3.11.25.53 IP'lerinden birini seçiyoruz
+ 3.1. Gelen ekranda 3.11.224.235
+                    18.135.115.225
+                    52.56.117.134 IP'lerinden birini seçiyoruz.
  4. Chose to [A]pprove or [R]eject configuration sayfasında Approve seçeneğini seçiyoruz --> A
  5. Yarım saat sonra kurulum tamamlanınca reboot ediyoruz
  
