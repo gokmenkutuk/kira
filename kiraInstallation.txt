@@ -64,13 +64,13 @@ sudo -s
 //node'u çalıştırıyoruz node'un çalışmas 5-10 dakika arasında sürüyor
 kira
 
-//açılan ekranda 5'e basıyoruz gelen ekrandan aşağıdaki alanı alıp formda yerine yazıyoruz.
+//açılan ekranda 4'e basıyoruz gelen ekrandan aşağıdaki alanı alıp formda yerine yazıyoruz.
 Val.ADDR: "VALIDATOR ADDRES" 
 
 Kurulum ve form gönderme işlemi tamamlanmış oluyor.
 
 
-//Node sync olduktan sonra aşağıdaki 5 ve i ye basıyoruz ve aşağıdaki komutu kendi bilgilerimize göre doldurarak çalıştırıyoruz
+//Node sync olduktan sonra aşağıdaki 4 ve i ye basıyoruz ve aşağıdaki komutu kendi bilgilerimize göre doldurarak çalıştırıyoruz
 
 sekaid tx customstaking claim-validator-seat --from validator --keyring-backend=test --home=$SEKAID_HOME \
   --moniker="gloreix" \
