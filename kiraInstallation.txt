@@ -38,22 +38,25 @@ CTRL + O ENTER CTRL + X
 //komutu çalıştırmak için ssh ekranı olması gerekiyor bunun için aşağıdaki komutu yazıyoruz
 sudo -s
 
-//Komutu çalıştırdıktan sonra gelen ekranda sırasıyla( testnet-2 , V yazıyoruz)
+//Komutu çalıştırdıktan sonra gelen ekranda aşağıdaki seçenekleri sırasıyla uyguluyoruz
 cd /tmp && read -p "Input branch name: " BRANCH && \
  wget https://raw.githubusercontent.com/KiraCore/kira/$BRANCH/workstation/init.sh -O ./i.sh && \
  chmod 555 -v ./i.sh && H=$(sha256sum ./i.sh | awk '{ print $1 }') && read -p "Is '$H' a [V]alid SHA256 ?: "$'\n' -n 1 V && \
- [ "${V,,}" == "v" ] && ./i.sh "$BRANCH" || echo "Hash was NOT accepted by the user"
+ [ "${V,,}" == "v" ] && ./i.sh "$BRANCH" || echo "ERROR: Setup failed or was cancelled by the user. Try again init command."
  
- //kurulum sırasında gelen ekranlarda
- 
- 1. Validator Node seçeneğini seçiyoruz -->2
- 2. Quick Setup seçeneğini seçiyoruz -->1
- 3. Create [N]ew network or [J]oin existing one: olanda Join seçeneğini seçiyoruz--> J 
- 3.1. Gelen ekranda 3.11.224.235
-                    18.135.115.225
-                    52.56.117.134 IP'lerinden birini seçiyoruz.
- 4. Chose to [A]pprove or [R]eject configuration sayfasında Approve seçeneğini seçiyoruz --> A
- 5. Yarım saat sonra kurulum tamamlanınca reboot ediyoruz
+ //kurulum sırasında gelen seçeneklere;
+ 1. testnet-3 
+ 2. V 
+ 3. Y 
+ 4. Enter 
+ 5. 2 --> Validator Node
+ 6. 1 --> Quick Setup
+ 7. J --> Join
+ 8. IP --> IP of the seed Node
+ 9. C --> Continue
+ 10. ENTER 
+ 11. A --> Approve
+ 12. Yarım saat sonra kurulum tamamlanınca reboot ediyoruz
  
 //Açıldıktan sonra sudo  kullanıcıya giriş yapıyoruz
 su - kira 
